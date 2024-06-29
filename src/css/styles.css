@@ -23,3 +23,143 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+body {
+  width: 1200px;
+}
+h1{
+  margin: 15px;
+}
+
+.return-home{
+  margin: 25px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #000  ;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+
+.visible-list{
+  display: flex;
+  flex-direction: column;
+  margin: 25px 15px;
+  gap: 24px;
+}
+.visible-list a{
+  width: 200px;
+  padding: 10px;
+border: 1px solid #242424;
+background-color: #fff;
+border-radius: 8px;
+text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
+transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.visible-list a:hover,
+.visible-list a:focus{
+background-color: rgb(122, 191, 191);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+.main-list {
+  margin: 25px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 320px;
+  height: 200px;
+}
+
+.modal {
+  width: 1200px;
+  height: 800px;
+  padding: 164px 28px;
+  user-select: none;
+  background-color: rgba(76, 76, 76, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------- form----- */
+.form-field{
+border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+}
+.feedback-form{
+display: flex;
+flex-direction: column;
+gap: 8px;
+padding: 24px;
+}
+.feedback-form label{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+}
+
+.feedback-form input{
+border: 1px solid #808080;
+border-radius: 4px;
+  width: 326px;
+height: 24px;
+margin-top: 8px;
+  padding: 8px 16px;
+transition: border 0.5s ease;
+}
+.feedback-form input:hover,
+.feedback-form input:focus
+{
+  border: 1px solid #000;
+}
+
+
+.feedback-form textarea{
+  resize: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 326px;
+  height: 64px;
+  margin-top: 8px;
+  padding: 8px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    }
+    
+    .feedback-form button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  transition: background 0.5s ease;
+}
+.feedback-form button:hover,
+.feedback-form button:focus {
+background: #6c8cff;
+}
